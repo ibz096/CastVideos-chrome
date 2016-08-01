@@ -352,7 +352,7 @@ CastPlayer.prototype.loadMedia = function(mediaIndex) {
     return;
   }
   console.log("loading..." + this.mediaContents[mediaIndex]['title']);
-  var mediaInfo = new chrome.cast.media.MediaInfo(this.mediaContents[mediaIndex]['sources'][0]);
+  var mediaInfo = new chrome.cast.media.MediaInfo('http://dreamsupport.us/justin/TV%20Shows/Breaking%20Bad/Season%202/Breaking%20Bad%20Season%202%20Episode%2002%20-%20Grilled.avi'/*this.mediaContents[mediaIndex]['sources'][0]*/);
 
   mediaInfo.metadata = new chrome.cast.media.GenericMediaMetadata();
   mediaInfo.metadata.metadataType = chrome.cast.media.MetadataType.GENERIC;
