@@ -359,7 +359,6 @@ CastPlayer.prototype.loadMedia = function(mediaIndex) {
     return;
   }
   console.log("loading..." + this.mediaContents[mediaIndex]['title']);
-  this.url = "http://dl2.my98music.com/Data/Serial/Daredevil/Season%201/Daredevil%20S01E01%20480p%20WebRip%20%5b98Music%5d.mkv"
   var mediaInfo = new chrome.cast.media.MediaInfo(/*this.mediaContents[mediaIndex]['sources'][0]*/this.url);
 
   mediaInfo.metadata = new chrome.cast.media.GenericMediaMetadata();
