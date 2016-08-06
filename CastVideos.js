@@ -358,7 +358,7 @@ CastPlayer.prototype.loadMedia = function(mediaIndex) {
     console.log("no session");
     return;
   }
-  console.log("loading..." + this.mediaContents[mediaIndex]['title']);
+  console.log("loading..." + this.url);
   var mediaInfo = new chrome.cast.media.MediaInfo(/*this.mediaContents[mediaIndex]['sources'][0]*/this.url);
 
   mediaInfo.metadata = new chrome.cast.media.GenericMediaMetadata();
