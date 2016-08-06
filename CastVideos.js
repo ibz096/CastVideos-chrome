@@ -115,7 +115,7 @@ var CastPlayer = function() {
   /* media contents from JSON */
   this.mediaContents = null;
   /* media from URL */
-  this.url = null
+  this.url = "http://dl2.my98music.com/Data/Serial/Daredevil/Season%201/Daredevil%20S01E01%20480p%20WebRip%20%5b98Music%5d.mkv"
 
   this.initializeCastPlayer();
   this.initializeLocalPlayer();
