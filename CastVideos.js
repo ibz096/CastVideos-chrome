@@ -121,11 +121,6 @@ var CastPlayer = function() {
   this.initializeLocalPlayer();
 };
 
-CastPlayer.prototype.getUrl = function() {
-  this.url = document.getElementById("url").value;
-  console.log(this.url);
-}
-
 /**
  * Initialize local media player 
  */
