@@ -114,10 +114,17 @@ var CastPlayer = function() {
 
   /* media contents from JSON */
   this.mediaContents = null;
+  /* media from URL */
+  this.url = null
 
   this.initializeCastPlayer();
   this.initializeLocalPlayer();
 };
+
+CastPlayer.prototype.getUrl = function() {
+  this.url = document.getElementById("url").value;
+  console.log(this.url);
+}
 
 /**
  * Initialize local media player 
