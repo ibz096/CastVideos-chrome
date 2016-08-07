@@ -360,8 +360,8 @@ CastPlayer.prototype.loadMedia = function(mediaIndex) {
   mediaInfo.metadata.metadataType = chrome.cast.media.MetadataType.GENERIC;
   mediaInfo.contentType = 'video/mkv';
 
-  mediaInfo.metadata.title = this.mediaContents[mediaIndex]['title'];
-  mediaInfo.metadata.images = [{'url': MEDIA_SOURCE_ROOT + this.mediaContents[mediaIndex]['thumb']}];
+  mediaInfo.metadata.title = /*this.mediaContents[mediaIndex]['title'];*/ null;
+  mediaInfo.metadata.images = null;/*[{'url': MEDIA_SOURCE_ROOT + this.mediaContents[mediaIndex]['thumb']}];*/
 
   var request = new chrome.cast.media.LoadRequest(mediaInfo);
   request.autoplay = this.autoplay;
