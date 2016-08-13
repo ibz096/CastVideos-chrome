@@ -496,7 +496,7 @@ CastPlayer.prototype.playMediaLocally = function() {
   vi.style.display = 'none';
   this.localPlayer.style.display = 'block';
   if( this.localPlayerState != PLAYER_STATE.PLAYING && this.localPlayerState != PLAYER_STATE.PAUSED ) { 
-    this.localPlayer.src = this.mediaContents[this.currentMediaIndex]['sources'][0];
+    this.localPlayer.src = this.url;
     this.localPlayer.load();
   }
   else {
