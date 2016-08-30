@@ -160,7 +160,7 @@ CastPlayer.prototype.initializeCastPlayer = function() {
 
   chrome.cast.initialize(apiConfig, this.onInitSuccess.bind(this), this.onError.bind(this));
 
-  this.addVideoThumbs();
+  /**this.addVideoThumbs();**/
   this.initializeUI();
 };
 
