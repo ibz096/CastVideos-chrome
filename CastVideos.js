@@ -852,7 +852,7 @@ CastPlayer.prototype.updateDisplayMessage = function() {
     document.getElementById("playerstatebg").style.display = 'block';
     document.getElementById("video_image_overlay").style.display = 'block';
     document.getElementById("playerstate").innerHTML = 
-      this.mediaContents[this.currentMediaIndex]['title'] + " "
+     "title" + " "
       + this.castPlayerState + " on " + this.session.receiver.friendlyName;
   }
 }
