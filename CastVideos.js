@@ -915,9 +915,9 @@ CastPlayer.prototype.selectMediaUpdateUI = function(mediaIndex) {
  */
 CastPlayer.prototype.initializeUI = function() {
   // set initial values for title, subtitle, and description 
-  document.getElementById("media_title").innerHTML = this.mediaContents[0]['title'];
-  document.getElementById("media_subtitle").innerHTML = this.mediaContents[this.currentMediaIndex]['subtitle'];
-  document.getElementById("media_desc").innerHTML = this.mediaContents[this.currentMediaIndex]['description'];
+  document.getElementById("media_title").innerHTML = 'title';
+  document.getElementById("media_subtitle").innerHTML = 'subtitle';
+  document.getElementById("media_desc").innerHTML = 'description';
 
   // add event handlers to UI components
   document.getElementById("casticonidle").addEventListener('click', this.launchApp.bind(this));
